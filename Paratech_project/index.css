@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
+* {
+  font-family: "Ubuntu", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+main {
+  position: relative;
+}
+.navbar {
+  text-transform: uppercase;
+  /* text-decoration: solid; */
+  font-weight: bolder;
+  font-size: 17px;
+  position: absolute;
+  /* background:  */
+}
+
+.logo {
+  font-size: 23px;
+}
+
+ul {
+  list-style-type: none;
+}
+.links {
+  text-decoration: none;
+}
+
+button {
+  padding: 8px;
+  background-color: rgb(255, 88, 31);
+  cursor: pointer;
+  border: 2px solid rgb(255, 88, 31);
+}
+
+.videoDiv {
+  /* height: 100%; */
+  /* width: 100%; */
+  /* position: absolute; */
+  /* top: 0; */
+  /* display: inline; */
+
+  /* object-fit: contain; */
+}
+#myVideo {
+  position: fixed;
+  /* position: absolute; */
+  /* margin: 0; */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+
+  object-fit: cover;
+  object-fit: contain;
+}
