@@ -9,31 +9,72 @@
 main {
   position: relative;
 }
+
+.firstSection {
+  background-color: rgba(0, 0, 0, 0.2);
+  /* background-color: blue; */
+}
 .navbar {
   text-transform: uppercase;
   /* text-decoration: solid; */
   font-weight: bolder;
   font-size: 17px;
-  position: absolute;
+  /* position: absolute; */
   /* background:  */
 }
 
 .logo {
-  font-size: 23px;
+  font-size: 35px;
+  color: white;
 }
-
+.studio {
+  color: rgb(255, 88, 31);
+}
 ul {
   list-style-type: none;
+  text-decoration: none;
+  /* display: block; */
 }
 .links {
   text-decoration: none;
+  /* list-style-type: none; */
+}
+
+.navLinks li {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0 30px;
+}
+
+.navLinks li a {
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  /* padding: 0 0 10px 13px; */
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  /* letter-spacing: 2px; */
+}
+.navLinks li a:hover {
+  color: #0088a9;
 }
 
 button {
-  padding: 8px;
+  padding: 12px;
   background-color: rgb(255, 88, 31);
   cursor: pointer;
   border: 2px solid rgb(255, 88, 31);
+  color: white;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  display: inline-block;
+}
+
+button:hover {
+  color: #0088a9;
+  padding: 12px;
 }
 
 .videoDiv {
@@ -56,8 +97,40 @@ button {
 
   min-width: 100%;
   min-height: 100%;
+  z-index: -2;
+
+  object-fit: cover;
+  object-fit: contain;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.blackBackground1 {
+  /* position: absolute;
+  background-color: rgba(60, 73, 82);
+  width: 100vh;
+  height: 100vw;
+  margin: 0; */
+
+  position: fixed;
+  /* position: absolute; */
+  /* margin: 0; */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  min-width: 100%;
+  min-height: 100%;
   z-index: -1;
 
   object-fit: cover;
   object-fit: contain;
+
+  background-color: rgba(60, 73, 82, 0.7);
+  /* background-color: rgba(0, 0, 0, 0.6); */
 }
