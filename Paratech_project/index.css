@@ -8,24 +8,58 @@
 }
 main {
   position: relative;
+  height: 100vh;
+  width: 100vw;
 }
 
+/* .navigation {
+  position: sticky;
+  top: 0;
+} */
+
 .firstSection {
-  background-color: rgba(0, 0, 0, 0.2);
+  /* background-color: rgba(0, 0, 0, 0.2); */
+  position: relative;
+  /* position: sticky; */
+  /* top: 0; */
   /* background-color: blue; */
 }
-.navbar {
+header.navbar {
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: all 2s ease 1s;
+  position: sticky;
+  top: 0;
   text-transform: uppercase;
   /* text-decoration: solid; */
   font-weight: bolder;
   font-size: 17px;
-  /* position: absolute; */
+  /* position: fixed; */
+  /* margin-top: 0; */
   /* background:  */
+}
+
+header.sticky {
+  transition: all 2s ease 1s;
+
+  /* background-color: white; */
+  position: sticky;
+  top: 0;
+  z-index: -3;
+}
+
+header.sticky2 {
+  transition: all 2s ease 1s;
+
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .logo {
   font-size: 35px;
   color: white;
+  padding-right: 20px;
 }
 .studio {
   color: rgb(255, 88, 31);
@@ -43,7 +77,7 @@ ul {
 .navLinks li {
   display: inline-block;
   text-decoration: none;
-  padding: 0 30px;
+  padding: 0 20px;
 }
 
 .navLinks li a {
@@ -78,8 +112,8 @@ button:hover {
 }
 
 .videoDiv {
-  /* height: 100%; */
-  /* width: 100%; */
+  height: 100vh;
+  width: 100vw;
   /* position: absolute; */
   /* top: 0; */
   /* display: inline; */
@@ -87,20 +121,25 @@ button:hover {
   /* object-fit: contain; */
 }
 #myVideo {
-  position: fixed;
-  /* position: absolute; */
+  /* position: fixed; */
+  position: absolute;
   /* margin: 0; */
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
 
-  min-width: 100%;
-  min-height: 100%;
+  width: 100vw;
+  height: 100vh;
+
+  /* min-width: 100vw; */
+  /* min-height: 100vh; */
   z-index: -2;
 
   object-fit: cover;
-  object-fit: contain;
+  /* object-fit: contain; */
+  /* overflow: hidden; */
+  background-repeat: no-repeat;
 }
 header {
   display: flex;
@@ -116,7 +155,7 @@ header {
   height: 100vw;
   margin: 0; */
 
-  position: fixed;
+  position: absolute;
   /* position: absolute; */
   /* margin: 0; */
   top: 0;
@@ -124,8 +163,11 @@ header {
   right: 0;
   bottom: 0;
 
-  min-width: 100%;
-  min-height: 100%;
+  /* min-width: 100vw; */
+  /* min-height: 100vh; */
+
+  width: 100vw;
+  height: 100vh;
   z-index: -1;
 
   object-fit: cover;
@@ -133,4 +175,133 @@ header {
 
   background-color: rgba(60, 73, 82, 0.7);
   /* background-color: rgba(0, 0, 0, 0.6); */
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+  margin-left: 15%;
+
+  /* position: absolute; */
+  /* justify-content: center; */
+}
+.textOverlay {
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300px;
+  color: white;
+  z-index: 10;
+  /* width: 500px; */
+}
+
+.work {
+  font-size: 20px;
+  margin-bottom: 2.3rem;
+}
+.easy {
+  font-size: 90px;
+}
+.gym {
+  color: rgb(255, 88, 31);
+}
+
+.membershipButton {
+  padding: 12px;
+  background-color: rgb(255, 88, 31);
+  cursor: pointer;
+  /* border: 2px solid rgb(255, 88, 31); */
+  color: black;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 2.5rem;
+}
+
+.membershipButton:hover {
+  background-color: #4b8594;
+  padding: 15px;
+  color: black;
+}
+
+.section2 {
+  background-color: white;
+  min-height: 100vh;
+  min-width: 100vw;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 60;
+  position: relative;
+}
+
+.section2Container {
+  position: absolute;
+  /* display: inline-block; */
+  margin-top: 140px;
+  margin-left: 425px;
+}
+.choose {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.program {
+  color: rgb(255, 88, 31);
+}
+
+.section2article1 {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.section2article2 {
+  font-size: 15px;
+}
+
+.section2Image {
+  margin-bottom: 12px;
+}
+
+/* PROGRAMS START */
+.programsContainer {
+  /* position: relative; */
+}
+
+.diffPrograms {
+  text-align: left;
+  margin-top: 25%;
+  margin-left: 10%;
+  position: absolute;
+  border: 2px solid red;
+  /* display: block; */
+  display: flex;
+  font-size: 15px;
+
+  width: calc(100vw - 25%);
+  /* height: 500px; */
+}
+
+.program1 {
+  width: 50%;
+}
+.program1 img {
+  float: left;
+}
+
+.program1Text {
+  /* justify-content: left; */
+  line-height: 25px;
+}
+
+.program2 {
+  width: 50%;
+}
+
+.program2 img {
+  float: left;
+}
+
+.diffPrograms2 {
+  margin-top: 40%;
 }
