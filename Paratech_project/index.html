@@ -6,22 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <main>
       <!-- FIRST SECTION START -->
-      <section class="firstSection">
+      <section class="firstSection sectionSelector home" id='nav2home'>
         <!-- NAVIGATION PANE START -->
         <section class="navigation">
           <header class="navbar">
             <div class="logo">training <span class="studio">studio</span></div>
             <nav>
               <ul class="navLinks">
-                <li><a href="#" class="links">home</a></li>
-                <li><a href="#" class="links">about</a></li>
-                <li><a href="#" class="links">classes</a></li>
-                <li><a href="#" class="links">schedules</a></li>
-                <li><a href="#" class="links">contact</a></li>
+                <li class="links nav1home"><a href="#nav2home" class="links nav1home setNavColour" id='setNavColour'>home</a></li>
+                <li><a href="#nav2about" class="links">about</a></li>
+                <li><a href="#nav2classes" class="links">classes</a></li>
+                <li><a href="#nav2schedules" class="links">schedules</a></li>
+                <li><a href="#nav2contact" class="links">contact</a></li>
                 <li>
                   <a href="" class="links">
                     <button>SIGN UP</button>
@@ -31,6 +32,24 @@
             </nav>
           </header>
         </section>
+        <section class="container21">
+      <!-- SECOND NAVBAR START -->
+      <!-- <section class="nav2">
+        <div class="nav2Links">
+          <ul>
+            <li class="training"><h1>training <span>studio</span></h1></li>
+            <li>home</li>
+            <li>about</li>
+            <li>classes</li>
+            <li>schedules</li>
+            <li>contact</li>
+            <li><button>sign up</button></li>
+          </ul>
+        </div>
+
+
+      </section> -->
+      
         <!-- NAVIGATION PANE END -->
         <!-- TEXT OVERLAY -->
         <section class="textContainer">
@@ -56,9 +75,31 @@
     </main>
     <!-- FIRST SECTION END -->
 
-    <!-- SECOND SECTION START -->
-    <section class="container">
-    <section class="section2">
+      <!-- SECOND NAVBAR START -->
+
+<section class="navSelector">
+        <div class="nav2Links">
+          <ul class='navListSelector'>
+            <li class="training"><h1>training <span>studio</span></h1></li>
+            <li class="links nav2home"><a href="#nav2home" id='aSelector'>home</a></li>
+            <li class="links nav2about" ><a href="#nav2about" id='aSelector'>about</a></li>
+            <li class="links nav2classes" ><a href="#nav2classes" id='aSelector'>classes</a></li>
+            <li class="links nav2schedules" ><a href="#nav2schedules" id='aSelector'>schedules</a></li>
+            <li class="links nav2contact"><a href="#nav2contact" id='aSelector'>contact</a></li>
+            <li ><button>sign up</button></li>
+          </ul>
+        </div>
+
+
+      </section>
+      <!-- SECOND NAVBAR END -->
+
+
+      
+      <!-- SECOND SECTION START -->
+
+    <section class="container21 section2Selector sectionSelector" id='nav2about'>
+      <section class="section2">
       <section class="section2Container">
         <div class="choose">choose <span class="program">program</span></div>
 
@@ -81,56 +122,320 @@
       </section>
      <!-- PROGRAMS START -->
      <div class="programsContainer">
+       <!-- FIRST ROW OF PROGRAMS START -->
           <section class="diffPrograms">
         <div class="program1 program">
           <img src="./images/features-first-icon.png" alt="no image">
-          <aside class="text1">
-          <h2 class="program1Heading">Basic Fitness</h2>
-          <p class="program1Text">Please do not re-distribute this template ZIP file on any <br> template collection website. This is not allowed</p>
-          <a class="program1Link" href="#">discover more</a>
+          <aside class="text1 programTextContainer">
+          <h2 class="program1Heading programHeading">Basic Fitness</h2>
+          <p class="program1Text programText">Please do not re-distribute this template ZIP file on any <br> template collection website. This is not allowed</p>
+          <a class="programLink" href="#">discover more</a>
           </aside>
         </div>
 
         
         <div class="program2 program">
           <img src="./images/features-first-icon.png" alt="no image">
-          <aside class="text1">
-          <h2 class="program1Heading">Advanced Muscle Course</h2>
-          <p class="program1Text"> You may want to browse through <a href="#">Digital Marketing</a> or <a href="#">Corporate</a> HTML CSS templates on our website.</p>
-          <a class="program1Link" href="#">discover more</a>
+          <aside class="text2 programTextContainer">
+          <h2 class="program2Heading programHeading">Advanced Muscle Course</h2>
+          <p class="program2Text programText"> You may want to browse through <a href="#">Digital Marketing</a> or <a href="#">Corporate</a> HTML CSS templates on our website.</p>
+          <a class="programLink" href="#">discover more</a>
           </aside>
           
-        </div>
-
-
-
-        
+        </div>        
       </section>
+
+       <!-- FIRST ROW OF PROGRAMS END -->
+
+       <!-- SECOND ROW OF PROGRAMS START -->
+
       <section class="diffPrograms2 diffPrograms">
-        <div class="program3">
+        <div class="program3 program">
           <img src="./images/features-first-icon.png" alt="no image">
-          <aside class="text1">
-          <h2 class="program1Heading">Advanced Muscle Course</h2>
-          <p class="program1Text"> You may want to browse through <a href="#">Digital Marketing</a> or <a href="#">Corporate</a> HTML CSS templates on our website.</p>
-          <a class="program1Link" href="#">discover more</a>
+          <aside class="text3 programTextContainer">
+          <h2 class="program3Heading programHeading">New Gym Training</h2>
+          <p class="program3Text programText"> If you wish to support TemplateMo website via PayPal, please feel free to contact us. We appreciate it a lot.</p>
+          <a class="programLink" href="#">discover more</a>
           </aside>
         </div>
 
-<!-- ADD PADDINGS TO THE TEXT WRAPED AROUND THE IMAGE TO SEE IF IT'D WORK BEFORE CONTINUING WITH THE OTHERS -->
 
 
-        <div class="program4">4</div>
+
+        <div class="program4 program">
+           <img src="./images/features-first-icon.png" alt="no image">
+          <aside class="text4 programTextContainer">
+          <h2 class="program3Heading programHeading">Yoga Training</h2>
+          <p class="program4Text programText">This template is built on Bootstrap v4.3.1 framework. It is easy to adapt the columns and sections</p>
+          <a class="programLink" href="#">discover more</a>
+          </aside>
+        </div>
       </section>
+       <!-- SECOND ROW OF PROGRAMS END -->
+
+       <!-- THIRD ROW OF PROGRAMS START -->
+      
+      <section class="diffPrograms3 diffPrograms">
+        <div class="program3 program">
+          <img src="./images/features-first-icon.png" alt="no image">
+          <aside class="text3 programTextContainer">
+          <h2 class="program3Heading programHeading">Basic Muscle Course</h2>
+          <p class="program3Text programText"> Credit goes to <a href="#">Pexels website</a> for images and video background used in this HTML template</p>
+          <a class="programLink" href="#">discover more</a>
+          </aside>
+        </div>
+
+
+
+
+        <div class="program4 program">
+           <img src="./images/features-first-icon.png" alt="no image">
+          <aside class="text4 programTextContainer">
+          <h2 class="program3Heading programHeading">Yoga Training</h2>
+          <p class="program4Text programText">This template is built on Bootstrap v4.3.1 framework. It is easy to adapt the columns and sections</p>
+          <a class="programLink" href="#">discover more</a>
+          </aside>
+        </div>
+      </section>
+       <!-- THIRD ROW OF PROGRAMS END -->
+
+      <!-- WHITE SPACE BELOW SECTION TWO -->
+      <!-- <section>
+        <div class="section2WhiteSpace"></div>
+      </section> -->
+
       </div>
       
       <!-- PROGRAMS END -->
     </section>
-     
-    </section>
     <!-- SECOND SECTION END -->
+     
+    
+    </section>
+
+    <section class="thirdSection section3Selector">
+      <div class="section3ImageContainer">
+        <!-- SECTION THREE TEXT OVERLAY START -->
+        <div class="section3Text">
+        <h1 class="section3Header">don't <span>think</span>, begin <span>today</span>!</h1>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni laudantium minima dignissimos ullam dolores? Fugit saepe natus temporibus laborum modi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <button class="section3Button">become a member</button>
+      </div>
+        <!-- SECTION THREE TEXT OVERLAY END -->
+      </div>
+    </section>
+    <!-- THIRD SECTION END -->
+
+        <!-- SECTION FOUR(ACTURALLY THREE) START -->
+        
+        <section class="section4Container section4Selector sectionSelector" id='nav2classes'>
+          <div class="initialTextContainer">
+            <h1>our <span>classes</span></h1>
+            <img src="./images/line-dec.png" alt="no image">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio corrupti dolorem ipsa.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </div>
+          <!-- SECTION FOUR REMAINING CONTENT -->
+
+          <aside class="section4_2Container">
+            <!-- FIRST COLUMN START -->
+
+            <div class="div1 columnContainer">
+              <ul class="columnContainerList">
+                <li class="item1 item">
+                  <!-- <div class="itemContainer"> -->
+                    <!-- <img src="./images/tabs-first-icon.png" alt="no image"> -->
+                    <h2 class="diffH2">First Training Class</h2>
+                  <!-- </div> -->
+                </li>
+
+                <li class="item1 item">
+                  <div class="itemContainer">
+                    <!-- <img src="./images/tabs-first-icon.png" alt="no image"> -->
+                    <h2>Second Training Class</h2>
+                  </div>
+                </li>
+                 <li class="item1 item">
+                  <div class="itemContainer">
+                    <!-- <img src="./images/tabs-first-icon.png" alt="no image"> -->
+                    <h2>Third Training Class</h2>
+                  </div>
+                </li>
+                 <li class="item1 item">
+                  <div class="itemContainer">
+                    <!-- <img src="./images/tabs-first-icon.png" alt="no image"> -->
+                    <h2>Fourth Training Class</h2>
+                  </div>
+                </li>                
+              </ul>
+               <div class="itemContainer">
+                   <button>View All Schedules</button>
+                  </div>
+            </div>
+            
+            <!-- FIRST COLUMN END -->
+
+            <!-- SECOND COLUMN START -->
+            
+            <div class="div2 columnContainer" >
+              <div class="imageContainer">
+              <img src="./images/training-image-01.jpg" alt="no image">
+              </div>
+
+              <div class="textContainer2">
+                <h1>first training class</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sint praesentium pariatur iusto? <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam itaque saepe qui quia. Sunt <br> sapiente facere nisi ipsum, necessitatibus expedita culpa similique laudantium maiores</p>
+              </div>
+              <button>
+                view schedule
+              </button>
+            </div>
+
+            <!-- SECOND COLUMN END -->
+
+          </aside>
+        </section>
+        <!-- SECTION FOUR(ACTURALLY THREE) START -->
+
+        <!-- SECTION FIVE START -->
+
+        <section class="section5Container sectionSelector" id='nav2schedules' >
+          <div class="section5ContentContainer">
+            <div class="section5TextContainer">
+              <h1>classes <span class='schedule'>schedule</span></h1>
+              <img src="./images/line-dec.png" alt="">
+              <p class="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa nesciunt <br> dicta cum suscipit nemo. Nesciunt?</p>
+              <p class="p2"><span class="monday daySelector">Monday</span> / <span class="daySelector">Tuesday</span> / <span class="daySelector">Wednesday</span> / <span class="daySelector">Thursday</span> / <span class="daySelector">Friday</span></p>
+            </div>
+            <div class="section5TableContainer">
+              <table class="w3-table w3-border">
+                <tr>
+                  <td>Fitness Class</td>
+                  <td>10:00AM - 11:30AM</td>
+                  <td></td>
+                  <td>William G. Stewart</td>
+                </tr>
+                <tr>
+                  <td>Muscle Training</td>
+                  <td></td>
+                  <td></td>
+                  <td>Paul D. Newman</td>
+                </tr>
+                <tr>
+                  <td>Body Building</td>
+                  <td></td>
+                  <td>2:00PM - 3:30PM</td>
+                  <td>Boyd C. Harris</td>
+                </tr>
+                <tr>
+                  <td>Yoga Training Class</td>
+                  <td></td>
+                  <td></td>
+                  <td>Hecto T. Daigle</td>
+                </tr>
+                <tr>
+                  <td>Advanced Training</td>
+                  <td></td>
+                  <td></td>
+                  <td>Bred D. Bowers</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+        </section>
 
 
+
+
+      
+        <!-- SECTION FIVE END -->
+
+        <!-- SECTION SIX START -->
+        <section class="section6Container sectionSelector" id='nav2contact'>
+          <div class="section6TextContainer">
+            <h1>expert <span>trainers</span></h1>
+            <img src="./images/line-dec.png" alt="">
+            <p class="p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur perspiciatis sunt exercitationem ipsa <br> iure explicabo vitae accusamus numquam earum cum.</p>
+          </div>
+          <div class="section6ContactContainer">
+            <div class="contact1">
+              <img src="./images/first-trainer.jpg" alt="no image">
+              <aside>
+              <p class="p1">Strength Trainer</p>
+              <h1>Bret D. Bowers</h1>
+              <p class="p2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae optio, eaque eveniet veritatis molestias illum quibusdam </p>
+              </aside>
+              <aside class="links">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-behance"></a>
+              </aside>
+            </div>
+            <div class="contact2">
+              <img src="./images/second-trainer.jpg" alt="no image">
+              <aside>
+              <p class="p1">Muscle Trainer</p>
+              <h1>Hector T. Daigl</h1>
+              <p class="p2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae optio, eaque eveniet veritatis molestias illum quibusdam </p>
+              </aside>
+              <aside class="links">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-behance"></a>
+              </aside>
+            </div>
+            <div class="contact3">
+              <img src="./images/third-trainer.jpg" alt="no image">
+              <aside>
+              <p class="p1">Power Trainer</p>
+              <h1>Paul D. Newman</h1>
+              <p class="p2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae optio, eaque eveniet veritatis molestias illum quibusdam x</p>
+              </aside>
+              <aside class="links">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-behance"></a>
+              </aside>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 6 END -->
+
+        <!-- SECTION 7 START -->
+        <section class="section7Container">
+          <div class="contentContainer">
+            <div class="mapContainer">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1013858.0922069118!2d3.182727483523978!3d6.9640446096954225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1039ed8218539e5f%3A0x4eecc1bbc83e74a3!2sParach%20Computers%20(%20ICT%20Training%20Centre%2C%20Orogun%2C%20Ibadan)!5e0!3m2!1sen!2sng!4v1641018454035!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <div class="formContainer">
+              <div class="formContainerInner">
+                <div class="formContentInner">
+                  <aside class="topRow">
+                    <input type="text" placeholder="Your Name*" name="name" id="name">
+                    <input type="email" placeholder="Your Email*" name="email" id="mail">
+                  </aside>
+                 <input type="text" placeholder="Subject" name="subject" id="subject">
+                 <textarea name="user_info" id="message" cols="3" rows="4" placeholder="Message"></textarea>
+                 <input type="submit" value="SEND MESSAGE" id="submit"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- SECTION 7 END -->
+        <footer>
+          <p>Copyright &copy 2020 Training Studio - Designed by <span>Igee &#128521</span></p>
+        </footer>
     <!-- JAVASCRIPT -->
     <script src="./index.js"></script>
+    <!-- <script src="./main.js"></script> -->
   </body>
 </html>
