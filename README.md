@@ -1,2 +1,2 @@
-# paratech_project
+# recreation_project
 to recreate the website in the video
